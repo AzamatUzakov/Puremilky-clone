@@ -1,10 +1,12 @@
 import React from "react";
-import Header from "../components/Header/Header";
+import Hero from "./Home-Sections/Hero"
+import Productions from "./Home-Sections/Productions";
 const Home: React.FC = () => {
     return (
 
         <div>
-            <Header />
+            <Hero />
+            <Productions />
         </div>
 
     );

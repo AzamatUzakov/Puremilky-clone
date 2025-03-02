@@ -23,8 +23,8 @@ const Header: React.FC = () => {
                     <Link to={"/"}>РУС</Link>
                     <Link to={"/"}>ENG</Link>
                 </nav>
-                <div className="burgerMenu"></div>
-            </header>
+{/*                 <div className="burgerMenu"></div>
+ */}            </header>
 
         </div>
 

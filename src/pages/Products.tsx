@@ -4,8 +4,8 @@ import Header from "../components/Header/Header";
 const Products: React.FC = () => {
     return (
         <div>
-            <Header />
-
+            отипот
+            
         </div>
     );
 }
