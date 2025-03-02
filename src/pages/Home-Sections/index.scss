@@ -58,7 +58,7 @@
 
 .product-main-continer {
   width: 100%;
-
+padding: 20px 30px;
   .productNav {
     display: flex;
     justify-content: space-between;
@@ -81,6 +81,14 @@
       font-weight: 400;
       font-size: 16px;
       color: white;
+      cursor: pointer;
+      transition: 0.4s ease;
+
+      &:hover {
+        background-color: gainsboro;
+        color: black;
+        transition: 0.4s ease;
+      }
     }
   }
 }
