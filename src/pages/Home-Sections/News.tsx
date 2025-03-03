@@ -16,7 +16,7 @@ const News: React.FC = () => {
             </div>
             <div className="swiperBlock">
 
-                {Array.from({ length: 5 }).map((_, idx) => (<div className="elem" key={idx}>
+                {Array.from({ length: 5}).map((_, idx:number) => (<div className="elem" key={idx}>
                     <div className="promotion">Акция</div>
                     <h4>Выиграйте Malibu <br /> при покупке <br /> молока</h4>
                     <p>Покупайте молоко и получите <br /> возможность выиграть <br />

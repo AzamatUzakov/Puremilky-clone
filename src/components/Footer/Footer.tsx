@@ -1,8 +1,13 @@
-
-const Footer = () => {
+import React from "react";
+const Footer: React.FC = () => {
     return (
         <footer>
-            <p>© 2025 PureMilky. Все права защищены.</p>
+           
+            <div className="floating-block"></div>
+
+            <div className="footerBox">
+                <img src="/kefir.png" alt="kefit"  className="kefitPosition"/>
+            </div>
         </footer>
     );
 };
