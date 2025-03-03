@@ -8,7 +8,7 @@ const product: React.FC = () => {
         <div className="product-cont">
             {
                 products.map((i) => (
-                    <div className="item">
+                    <div className="item" key={i.id}>
                         <img src={i.img} alt="" />
                         <div className="bottomBtn">
                             <p>{i.title}</p>

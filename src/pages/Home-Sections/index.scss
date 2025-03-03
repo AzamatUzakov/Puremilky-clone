@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif !important;
 }
 
 .hero-main-container {
   margin: 0 auto;
   text-align: center;
   width: 100%;
+
   .heroImg {
     position: relative;
     z-index: -1;
@@ -58,7 +59,7 @@
 
 .product-main-continer {
   width: 100%;
-padding: 20px 30px;
+  padding: 20px 30px;
   .productNav {
     display: flex;
     justify-content: space-between;
@@ -89,6 +90,232 @@ padding: 20px 30px;
         color: black;
         transition: 0.4s ease;
       }
+    }
+  }
+}
+///////////////////////////////////////////////////////////////////////
+
+.aboutCompany-main-container {
+  width: 100%;
+  padding: 20px 30px;
+  margin-top: 40px;
+  .aboutTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    h2 {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 40.2px;
+      color: #00a23a;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .statistics-box {
+    margin-top: 70px;
+    h3 {
+      font-weight: 700;
+      font-size: 50px;
+      color: #00a23a;
+    }
+    p {
+      font-weight: 500;
+      font-size: 19px;
+    }
+    .topStatistics-box {
+      display: flex;
+      width: 72%;
+      text-align: center;
+      justify-content: space-between;
+    }
+    .TwBox {
+      display: flex;
+      width: 100%;
+      justify-content: end;
+    }
+    .FrBox {
+      display: flex;
+      width: 100%;
+      justify-content: start;
+    }
+    .bottomStatistics-box {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+      text-align: center;
+    }
+  }
+}
+///////////////////////////////////////////////////////////////////////
+
+.advantages-main-container {
+  width: 100%;
+  padding: 20px 30px;
+  margin-top: 40px;
+
+  .advantages-title {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    h2 {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 40.2px;
+      color: #00a23a;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .advantages-img {
+    text-align: center;
+    margin-top: 40px;
+    img {
+      width: 80%;
+      object-fit: cover;
+      text-align: center;
+    }
+  }
+}
+///////////////////////////////////////////////////////////////////////
+
+.news-main-container {
+  width: 100%;
+  padding: 20px 30px;
+  margin-top: 40px;
+
+  .news-titles {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 100%;
+    h2 {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 40.2px;
+      color: #00a23a;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .txt-btn-box {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    button {
+      width: 35px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 80px;
+      border: 0;
+      background-color: #00a23a;
+      cursor: pointer;
+      img {
+        width: 15px;
+      }
+    }
+    .prevBtn {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .swiperBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 30px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .swiperBlock .elem {
+    flex: 0 0 auto;
+    width: 40%;
+    box-shadow: 0px 0px 11px 5px rgba(34, 60, 80, 0.2);
+    padding: 30px;
+    border-radius: 24px;
+
+    .promotion {
+      padding: 8px;
+      width: 80px;
+      text-align: center;
+      background-color: #fdc500;
+      border-radius: 24px;
+      color: #003014;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+    h4 {
+      font-weight: 800;
+      font-size: 35px;
+      line-height: 35px;
+      color: #00a23a;
+      margin-bottom: 8px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 15px;
+    }
+    .questionnaireBtn {
+      padding: 15px 35px;
+      margin-top: 80px;
+      background-color: #00a23a;
+      color: white;
+      border: 0;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: 0.4s ease;
+      &:hover {
+        background-color: gainsboro;
+        color: black;
+        transition: 0.4s ease;
+      }
+    }
+  }
+}
+///////////////////////////////////////////////////////////////////////
+
+.group-siyob-main-container {
+  width: 100%;
+  padding: 20px 30px;
+  margin-top: 40px;
+
+  .group-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    h2 {
+      font-weight: 600;
+      font-size: 50px;
+      line-height: 40.2px;
+      color: #00a23a;
+    }
+    button {
+      width: 180px;
+      height: 60px;
+      border: 0;
+      color: white;
+    background-color: #00a23a;
     }
   }
 }
