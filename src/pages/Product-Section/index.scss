@@ -57,3 +57,56 @@
     }
   }
 }
+
+.productsBox {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .item {
+    width: 300px;
+    height: 370px;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-radius: 10px;
+
+    img:first-child {
+      width: 120px;
+      object-fit: cover;
+    }
+
+    .bottomBtn {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      background-color: #00a23a;
+      padding: 20px;
+      border-radius: 12px;
+      img {
+        width: 13px;
+        height: 20px;
+      }
+      .title {
+        p {
+          &:nth-child(1) {
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+          }
+          &:nth-child(2) {
+            font-weight: 400;
+            font-size: 13px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

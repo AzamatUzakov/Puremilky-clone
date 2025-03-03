@@ -1,4 +1,7 @@
 import React from "react"
+import products from "../../utils/ProductsArr";
+console.log(products);
+
 import "./index.scss"
 const ProductHero: React.FC = () => {
     return (
@@ -18,7 +21,21 @@ const ProductHero: React.FC = () => {
                             <a href="">Йогурты</a>
                             <a href="">Кисломолочная продукция</a></div>
                     </div>
+
+
                 </div>
+
+            </div>
+            <div className="productsBox">
+
+                {products.map((item) => (<div className="item" key={item.id}>
+                    <img src={item.img} alt="" />
+                    <div className="bottomBtn">
+                        <div className="title"><p>{item.name}</p><p>{item.title}</p></div>
+                        <img src="/str.png" alt="str" />
+                    </div>
+                </div>
+                ))}
             </div>
         </div>
     );
