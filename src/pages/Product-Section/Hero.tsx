@@ -13,13 +13,12 @@ const ProductHero: React.FC = () => {
                 <div className="catalog-cont">
                     <div className="titles"> <h1>Каталог нашей продукции</h1>
                         <div className="navs">
-                            <a href="">Все</a>
-                            <a href="">Молоко</a>
-                            <a href="">Сырки</a>
-                            <a href="">Сыры</a>
-                            <a href="">Сметана, Каймак, Сливки</a>
-                            <a href="">Йогурты</a>
-                            <a href="">Кисломолочная продукция</a></div>
+                            <a href="#">Все</a>
+                            <a href="#">Молоко</a>
+                            <a href="#">Сырки</a>
+                            <a href="#">Сыры</a>
+                            <a href="#">Йогурты</a>
+                            <a href="#">Кисломолочная продукция</a></div>
                     </div>
 
 
