@@ -5,7 +5,7 @@ import "./index.scss"
 
 
 const Header: React.FC = () => {
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState<boolean>(false)
 
     const openModal = () => {
         setModal(true)
@@ -34,11 +34,11 @@ const Header: React.FC = () => {
                 </nav>
 
 
-                {<div className="burgerMenu"><img src="/burger.png" alt="" onClick={()=>openModal()}/></div>
+                {<div className="burgerMenu"><img src="/burger.png" alt="" onClick={() => openModal()} /></div>
                 }
 
                 {modal && <div className="sidebar" id="sidebar">
-                    <span className="close" onClick={()=> closeModla()}>✖</span>
+                    <span className="close" onClick={() => closeModla()}>✖</span>
                     <ul>
                         <li><Link to={"/"}>Главная</Link></li>
                         <li><Link to={"/products"}>Продукция</Link></li>
