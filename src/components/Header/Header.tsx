@@ -23,8 +23,21 @@ const Header: React.FC = () => {
                     <Link to={"/"}>РУС</Link>
                     <Link to={"/"}>ENG</Link>
                 </nav>
-{/*                 <div className="burgerMenu"></div>
- */}            </header>
+                {<div className="burgerMenu"><img src="/burger.png" alt="" /></div>
+
+                }
+                <div className="sidebar" id="sidebar">
+                    <span className="close">✖</span>
+                    <ul>
+                        <li><Link to={"/"}>Главная</Link></li>
+                        <li><Link to={"/products"}>Продукция</Link></li>
+                        <li><Link to={"/"}>О компании</Link></li>
+                        <li><Link to={"/"}>Рецепты</Link> </li>
+                        <li><Link to={"/"}>Блог</Link> </li>
+                        <li><Link to={"/"}>Контакты</Link></li>
+                    </ul>
+                </div>
+            </header>
 
         </div>
 

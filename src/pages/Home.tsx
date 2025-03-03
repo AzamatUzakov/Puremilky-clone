@@ -16,6 +16,7 @@ const Home: React.FC = () => {
             <Advantages />
             <News />
             <GroupSiyob />
+            
         </div>
 
     );

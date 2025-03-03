@@ -1,10 +1,10 @@
 import React from "react"
-import Header from "../components/Header/Header";
+import Hero from "./Product-Section/Hero";
 
 const Products: React.FC = () => {
     return (
         <div>
-            отипот
+        <Hero/>
             
         </div>
     );
