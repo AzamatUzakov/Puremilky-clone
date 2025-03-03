@@ -144,14 +144,80 @@ footer {
     align-items: center;
     border-radius: 100%;
     cursor: pointer;
-    img{
-        width: 60%;
+    img {
+      width: 60%;
     }
   }
-  .btm{
+  .btm {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin:  80px 60px 0;
+    margin: 80px 60px 0;
+  }
+}
+@media (max-width: 480px) {
+  footer .footerFroms {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footerFroms input {
+    width: 100%;
+  }
+  footer .footerFroms button {
+    width: 100%;
+  }
+  footer .floating-block h3 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 31.6px;
+    color: #00a23a;
+  }
+  footer .floating-block p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18.74px;
+  }
+  footer .bottomInfo .ifBox {
+    display: block;
+    justify-content: space-between;
+  }
+  footer .networks {
+    gap: 5px;
+    justify-content: center;
+  }
+  footer .btm {
+    display: block;
+    text-align: center;
+  }
+  footer h2 {
+    font-weight: 700;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 450px) {
+  .product-cont .item img:nth-child(1) {
+    width: 100%;
+    height: 118px;
+  }
+  .product-cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(113px, 1fr));
+    gap: 20px;
+  }
+  .news-main-container .swiperBlock .elem {
+    width: 94%;
+  }
+  .news-main-container .swiperBlock .elem h4 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  footer .floating-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 45.1px 0px rgba(0, 45, 0, 0.2509803922);
+    width: 90%;
   }
 }
