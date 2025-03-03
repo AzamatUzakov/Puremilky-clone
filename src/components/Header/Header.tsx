@@ -1,9 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "./index.scss"
 
 
 const Header: React.FC = () => {
+    const [modal, setModal] = useState(false)
+
+    const openModal = () => {
+        setModal(true)
+    }
+    const closeModla = () => {
+        setModal(false)
+    }
     return (
 
         <div>
@@ -23,11 +32,13 @@ const Header: React.FC = () => {
                     <Link to={"/"}>РУС</Link>
                     <Link to={"/"}>ENG</Link>
                 </nav>
-                {<div className="burgerMenu"><img src="/burger.png" alt="" /></div>
 
+
+                {<div className="burgerMenu"><img src="/burger.png" alt="" onClick={()=>openModal()}/></div>
                 }
-                <div className="sidebar" id="sidebar">
-                    <span className="close">✖</span>
+
+                {modal && <div className="sidebar" id="sidebar">
+                    <span className="close" onClick={()=> closeModla()}>✖</span>
                     <ul>
                         <li><Link to={"/"}>Главная</Link></li>
                         <li><Link to={"/products"}>Продукция</Link></li>
@@ -36,7 +47,7 @@ const Header: React.FC = () => {
                         <li><Link to={"/"}>Блог</Link> </li>
                         <li><Link to={"/"}>Контакты</Link></li>
                     </ul>
-                </div>
+                </div>}
             </header>
 
         </div>
